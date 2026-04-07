@@ -12,29 +12,29 @@ A robust, self-healing e-commerce platform built with PHP/MySQL, featuring autom
 ## 🌟 Key Features (ฟีเจอร์เด่น)
 
 ### 🤖 Recursive E2E Crawler (แมงมุมนักล่า Error)
+ระบบสแกนอัตโนมัติที่ช่วยตรวจสอบความเสถียรของเว็บไซต์ทั้งบ้าน:
 - **Dynamic Discovery**: ค้นหาลิงก์ใหม่ๆ โดยอัตโนมัติ
 - **Deep Scanning**: ตรวจจับ PHP Error, Syntax Error และ SQL Error ล่วงหน้า
 
-### 🛡️ Universal Guard System (ระบบเฝ้าระวังครอบจักรวาล)
-- **Image Self-Healing**: ระบบซ่อมแซมรูปภาพที่แตกอัตโนมัติ
-- **Centralized Logging**: จดบันทึกทุกปัญหาลง Log ทั่วทั้งโปรเจกต์
-
 ---
 
-## 🖼️ Project Showcase (Full-Width Slide)
-*เลื่อนลงเพื่อดูระบบการทำงานทั้งหมด (Scroll down to view all system components)*
+## 🖼️ ระบบการทำงาน (Showcase)
+> [!NOTE]  
+> **คลิกที่ปุ่มด้านล่างเพื่อเปิดดู "สไลด์ภาพ" ตัวอย่างระบบทั้งหมดคั้บ!**
 
-### 🏠 Storefront Ecosystem
-<img src="./assets/screenshots/homepage.png" alt="Storefront" width="100%">
+<details>
+<summary><b>📂 คลิกเพื่อดูรูปภาพตัวอย่างระบบ (Click to expand Gallery)</b></summary>
+<br>
 
-### 📦 Advanced Product Management
-<img src="./assets/screenshots/product.png" alt="Product Page" width="100%">
+| 🏠 Storefront Ecosystem | 📦 Product Management |
+|:---:|:---:|
+| <img src="./assets/screenshots/homepage.png" width="400"> | <img src="./assets/screenshots/product.png" width="400"> |
 
-### ⚔️ Professional Admin Dashboard
-<img src="./assets/screenshots/admin.png" alt="Admin Panel" width="100%">
+| 🛡️ Admin Dashboard | 🎯 Crawler Stability |
+|:---:|:---:|
+| <img src="./assets/screenshots/admin.png" width="400"> | <img src="./assets/screenshots/crawler.png" width="400"> |
 
-### 🎯 Stability Crawler Report
-<img src="./assets/screenshots/crawler.png" alt="Crawler Success" width="100%">
+</details>
 
 ---
 
