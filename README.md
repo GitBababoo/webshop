@@ -1,6 +1,8 @@
 # 🛡️ Shopee TH - Advanced Webshop Ecosystem
 
-![Hero Banner](./assets/screenshots/homepage.png)
+<p align="center">
+  <img src="./assets/screenshots/homepage.png" alt="Hero Banner" width="100%">
+</p>
 
 ### 🇹🇭 ระบบอีคอมเมิร์ซที่สมบูรณ์แบบ แข็งแกร่ง และดูแลตัวเองได้อัตโนมัติ
 A robust, self-healing e-commerce platform built with PHP/MySQL, featuring automated testing and universal stability guards.
@@ -10,38 +12,37 @@ A robust, self-healing e-commerce platform built with PHP/MySQL, featuring autom
 ## 🌟 Key Features (ฟีเจอร์เด่น)
 
 ### 🤖 Recursive E2E Crawler (แมงมุมนักล่า Error)
-ระบบสแกนอัตโนมัติที่ช่วยตรวจสอบความเสถียรของเว็บไซต์ทั้งบ้าน:
-- **Dynamic Discovery**: ค้นหาลิงก์ใหม่ๆ และตรวจสอบหน้าสินค้า/หมวดหมู่ทั้งหมดโดยอัตโนมัติ
-- **Deep Scanning**: ตรวจจับทั้ง PHP Error, Syntax Error และ SQL Error ล่วงหน้า
-- **Real-time Report**: สรุปผลสถานะ OK, Error, 404 แบบเจาะลึก
+- **Dynamic Discovery**: ค้นหาลิงก์ใหม่ๆ โดยอัตโนมัติ
+- **Deep Scanning**: ตรวจจับ PHP Error, Syntax Error และ SQL Error ล่วงหน้า
 
 ### 🛡️ Universal Guard System (ระบบเฝ้าระวังครอบจักรวาล)
-สถาปัตยกรรมที่ออกแบบมาให้ "ยืดหยุ่น" รองรับการขยายตัวในอนาคต:
-- **Image Self-Healing**: ระบบซ่อมแซมรูปภาพที่แตก/โหลดไม่ขึ้นอัตโนมัติ (Global Image Fallback)
-- **Centralized Logging**: จดบันทึกทุกปัญหาลง Log ทั่วทั้งโปรเจกต์โดยไม่ต้องเขียนโค้ดเพิ่มในไฟล์ใหม่
-- **DB Guard**: ตรวจสอบความถูกต้องของฐานข้อมูลเพื่อป้องกัน SQL Crashes ล่วงหน้า
+- **Image Self-Healing**: ระบบซ่อมแซมรูปภาพที่แตกอัตโนมัติ
+- **Centralized Logging**: จดบันทึกทุกปัญหาลง Log ทั่วทั้งโปรเจกต์
 
 ---
 
-## 🖼️ Preview (ระบบจริง 100%)
+## 🖼️ Project Showcase (Full-Width Slide)
+*เลื่อนลงเพื่อดูระบบการทำงานทั้งหมด (Scroll down to view all system components)*
 
-````carousel
-![Storefront Live](./assets/screenshots/homepage.png)
-<!-- slide -->
-![Product Management](./assets/screenshots/product.png)
-<!-- slide -->
-![Admin Dashboard](./assets/screenshots/admin.png)
-<!-- slide -->
-![Crawler Success Report](./assets/screenshots/crawler.png)
-````
+### 🏠 Storefront Ecosystem
+<img src="./assets/screenshots/homepage.png" alt="Storefront" width="100%">
+
+### 📦 Advanced Product Management
+<img src="./assets/screenshots/product.png" alt="Product Page" width="100%">
+
+### ⚔️ Professional Admin Dashboard
+<img src="./assets/screenshots/admin.png" alt="Admin Panel" width="100%">
+
+### 🎯 Stability Crawler Report
+<img src="./assets/screenshots/crawler.png" alt="Crawler Success" width="100%">
 
 ---
 
 ## ⚙️ Installation (วิธีติดตั้ง)
 
-1. **Clone Repository**: `git clone https://github.com/yourusername/webshop.git`
+1. **Clone Repository**: `git clone https://github.com/GitBababoo/webshop.git`
 2. **Move to XAMPP**: ย้ายโฟลเดอร์โครงการไปไว้ที่ `C:/xampp/htdocs/webshop`
-3. **Database Setup**: นำเข้าไฟล์ฐานข้อมูล `webshop` และตั้งค่าใน `/config/database.php`
+3. **Database Setup**: นำเข้าไฟล์ฐานข้อมูล `web_shop` และตั้งค่าใน `/config/database.php`
 4. **Ready**: เข้าใช้งานผ่าน [http://localhost/webshop/](http://localhost/webshop/)
 
 ---
