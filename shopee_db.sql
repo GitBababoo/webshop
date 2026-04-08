@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 07, 2026 at 04:52 PM
+-- Generation Time: Apr 07, 2026 at 05:20 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -46,7 +46,10 @@ CREATE TABLE `activity_logs` (
 
 INSERT INTO `activity_logs` (`log_id`, `user_id`, `action`, `module`, `target_type`, `target_id`, `description`, `ip_address`, `user_agent`, `created_at`) VALUES
 (1, 11, 'login', 'auth', NULL, NULL, 'เข้าสู่ระบบ | roles: superadmin,admin,content_mod,finance,support', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36', '2026-04-07 17:28:19'),
-(2, 11, 'login', 'auth', NULL, NULL, 'เข้าสู่ระบบ | roles: superadmin,admin,content_mod,finance,support', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36', '2026-04-07 18:58:15');
+(2, 11, 'login', 'auth', NULL, NULL, 'เข้าสู่ระบบ | roles: superadmin,admin,content_mod,finance,support', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36', '2026-04-07 18:58:15'),
+(3, 11, 'logout', 'auth', NULL, NULL, 'ออกจากระบบ', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36', '2026-04-07 22:05:45'),
+(4, 11, 'login', 'auth', NULL, NULL, 'เข้าสู่ระบบ | roles: superadmin,admin,content_mod,finance,support', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36', '2026-04-07 22:06:50'),
+(5, 11, 'login', 'auth', NULL, NULL, 'เข้าสู่ระบบ | roles: superadmin,admin,content_mod,finance,support', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36', '2026-04-07 22:08:11');
 
 -- --------------------------------------------------------
 
@@ -761,9 +764,9 @@ INSERT INTO `messages` (`message_id`, `conversation_id`, `sender_id`, `message_t
 (1, 1, 8, 'text', 'สวัสดีครับ สอบถาม Sony XM5 มีสีอะไรบ้างครับ?', NULL, NULL, NULL, 1, '2026-04-07 16:36:13'),
 (2, 1, 3, 'text', 'สวัสดีครับ ขณะนี้มีสีดำและสีขาวตามลำดับ', NULL, NULL, NULL, 1, '2026-04-07 16:36:13'),
 (3, 1, 8, 'text', 'ขอบคุณครับ ขอสั่งซื้อสีดำพร้อมส่งเลยครับ', NULL, NULL, NULL, 1, '2026-04-07 16:36:13'),
-(4, 1, 3, 'text', 'Ó╣äÓ©öÓ╣ëÓ╣ÇÓ©ÑÓ©óÓ©äÓ©úÓ©▒Ó©Ü! Ó©üÓ©öÓ©¬Ó©▒Ó╣êÓ©çÓ╣äÓ©öÓ╣ëÓ╣ÇÓ©ÑÓ©óÓ©ÖÓ©░Ó©äÓ©úÓ©▒Ó©Ü Ó©¬Ó╣êÓ©çÓ╣ÇÓ©úÓ╣çÓ©ºÓ╣üÓ©ÖÓ╣êÓ©ÖÓ©¡Ó©Ö', NULL, NULL, NULL, 0, '2026-04-07 16:36:13'),
-(5, 2, 9, 'text', 'Ó©üÓ©úÓ©░Ó©ùÓ©░Ó©éÓ©ÖÓ©▓Ó©öÓ©ÖÓ©ÁÓ╣ëÓ╣ÇÓ©½Ó©íÓ©▓Ó©░Ó©üÓ©▒Ó©ÜÓ╣ÇÓ©òÓ©▓Ó╣üÓ©üÓ╣èÓ©¬Ó©ùÓ©▒Ó╣êÓ©ºÓ╣äÓ©øÓ╣äÓ©½Ó©íÓ©äÓ©úÓ©▒Ó©Ü?', NULL, NULL, NULL, 1, '2026-04-07 16:36:13'),
-(6, 2, 5, 'text', 'Ó╣ÇÓ©½Ó©íÓ©▓Ó©░Ó©íÓ©▓Ó©üÓ╣ÇÓ©ÑÓ©óÓ©äÓ©úÓ©▒Ó©Ü Ó╣âÓ©èÓ╣ëÓ╣äÓ©öÓ╣ëÓ©üÓ©▒Ó©ÜÓ╣ÇÓ©òÓ©▓Ó©ùÓ©©Ó©üÓ©øÓ©úÓ©░Ó╣ÇÓ©áÓ©ùÓ©äÓ©úÓ©▒Ó©Ü', NULL, NULL, NULL, 1, '2026-04-07 16:36:13');
+(4, 1, 3, 'text', 'สวัสดีครับ มีของพร้อมส่งไหมครับ?', NULL, NULL, NULL, 0, '2026-04-07 16:36:13'),
+(5, 2, 9, 'text', 'สวัสดีครับ มีของพร้อมส่งไหมครับ?', NULL, NULL, NULL, 1, '2026-04-07 16:36:13'),
+(6, 2, 5, 'text', 'สวัสดีครับ มีของพร้อมส่งไหมครับ?', NULL, NULL, NULL, 1, '2026-04-07 16:36:13');
 
 -- --------------------------------------------------------
 
@@ -794,24 +797,24 @@ INSERT INTO `notifications` (`notification_id`, `user_id`, `type`, `title`, `bod
 (4, 8, 'promotion', 'รับส่วนลดพิเศษสำหรับสมาชิก', 'ใช้โค้ด TECH200 ลดทันที หมดเขต 31 ม.ค.', NULL, NULL, 0, '2026-04-07 16:36:13'),
 (5, 3, 'new_order', 'มีคำสั่งซื้อใหม่!', 'ออเดอร์ ORD-20240501-000004 รอดำเนินการ', 'order', 4, 1, '2026-04-07 16:36:13'),
 (6, 15, 'flash_sale', 'Flash Sale Ó╣ÇÓ©úÓ©┤Ó╣êÓ©íÓ╣üÓ©ÑÓ╣ëÓ©º!', 'Ó╣âÓ©èÓ╣ëÓ╣éÓ©äÓ╣ëÓ©ö SHOPEE50 Ó©ÑÓ©öÓ©ùÓ©▒Ó©ÖÓ©ùÓ©Á', NULL, NULL, 0, '2026-04-07 17:21:46'),
-(7, 16, 'flash_sale', 'Ó©¡Ó©¡Ó╣ÇÓ©öÓ©¡Ó©úÓ╣îÓ©éÓ©¡Ó©çÓ©äÓ©©Ó©ôÓ©üÓ©│Ó©ÑÓ©▒Ó©çÓ╣ÇÓ©öÓ©┤Ó©ÖÓ©ùÓ©▓Ó©ç!', 'Ó©¬Ó©┤Ó©ÖÓ©äÓ╣ëÓ©▓Ó©éÓ©¡Ó©çÓ©äÓ©©Ó©ôÓ©ûÓ©╣Ó©üÓ©êÓ©▒Ó©öÓ©¬Ó╣êÓ©çÓ╣üÓ©ÑÓ╣ëÓ©º', NULL, NULL, 1, '2026-04-07 17:21:46'),
-(8, 17, 'review_remind', 'Ó©¡Ó©¡Ó╣ÇÓ©öÓ©¡Ó©úÓ╣îÓ©éÓ©¡Ó©çÓ©äÓ©©Ó©ôÓ©üÓ©│Ó©ÑÓ©▒Ó©çÓ╣ÇÓ©öÓ©┤Ó©ÖÓ©ùÓ©▓Ó©ç!', 'Ó©¬Ó©┤Ó©ÖÓ©äÓ╣ëÓ©▓Ó©ùÓ©ÁÓ╣êÓ©¬Ó©▒Ó╣êÓ©çÓ©úÓ©¡Ó©üÓ©▓Ó©úÓ©úÓ©ÁÓ©ºÓ©┤Ó©º', NULL, NULL, 0, '2026-04-07 17:21:46'),
-(9, 18, 'order_update', 'อัพเดทสถานะออเดอร์', 'Ó©¬Ó©┤Ó©ÖÓ©äÓ╣ëÓ©▓Ó©ùÓ©ÁÓ╣êÓ©¬Ó©▒Ó╣êÓ©çÓ©úÓ©¡Ó©üÓ©▓Ó©úÓ©úÓ©ÁÓ©ºÓ©┤Ó©º', NULL, NULL, 0, '2026-04-07 17:21:46'),
-(10, 19, 'flash_sale', 'Ó©¡Ó©óÓ╣êÓ©▓Ó©ÑÓ©ÀÓ©íÓ©úÓ©ÁÓ©ºÓ©┤Ó©ºÓ©¬Ó©┤Ó©ÖÓ©äÓ╣ëÓ©▓', 'Ó©¬Ó©┤Ó©ÖÓ©äÓ╣ëÓ©▓Ó©éÓ©¡Ó©çÓ©äÓ©©Ó©ôÓ©ûÓ©╣Ó©üÓ©êÓ©▒Ó©öÓ©¬Ó╣êÓ©çÓ╣üÓ©ÑÓ╣ëÓ©º', NULL, NULL, 1, '2026-04-07 17:21:46'),
-(11, 20, 'flash_sale', 'Ó©¡Ó©¡Ó╣ÇÓ©öÓ©¡Ó©úÓ╣îÓ©éÓ©¡Ó©çÓ©äÓ©©Ó©ôÓ©üÓ©│Ó©ÑÓ©▒Ó©çÓ╣ÇÓ©öÓ©┤Ó©ÖÓ©ùÓ©▓Ó©ç!', 'Ó©¡Ó©óÓ╣êÓ©▓Ó©×Ó©ÑÓ©▓Ó©ö Ó©úÓ©▓Ó©äÓ©▓Ó©öÓ©ÁÓ╣üÓ©äÓ╣êÓ©ºÓ©▒Ó©ÖÓ©ÖÓ©ÁÓ╣ë', NULL, NULL, 1, '2026-04-07 17:21:46'),
+(7, 16, 'flash_sale', 'ยินดีต้อนรับ!', 'ยินดีต้อนรับสู่ Shopee Thailand แหล่งรวมสินค้าราคาสุดคุ้ม!', NULL, NULL, 1, '2026-04-07 17:21:46'),
+(8, 17, 'review_remind', 'ยินดีต้อนรับ!', 'ยินดีต้อนรับสู่ Shopee Thailand แหล่งรวมสินค้าราคาสุดคุ้ม!', NULL, NULL, 0, '2026-04-07 17:21:46'),
+(9, 18, 'order_update', 'ยินดีต้อนรับ!', 'ยินดีต้อนรับสู่ Shopee Thailand แหล่งรวมสินค้าราคาสุดคุ้ม!', NULL, NULL, 0, '2026-04-07 17:21:46'),
+(10, 19, 'flash_sale', 'ยินดีต้อนรับ!', 'ยินดีต้อนรับสู่ Shopee Thailand แหล่งรวมสินค้าราคาสุดคุ้ม!', NULL, NULL, 1, '2026-04-07 17:21:46'),
+(11, 20, 'flash_sale', 'ยินดีต้อนรับ!', 'ยินดีต้อนรับสู่ Shopee Thailand แหล่งรวมสินค้าราคาสุดคุ้ม!', NULL, NULL, 1, '2026-04-07 17:21:46'),
 (12, 21, 'order_update', 'อัพเดทสถานะออเดอร์', 'Ó╣âÓ©èÓ╣ëÓ╣éÓ©äÓ╣ëÓ©ö SHOPEE50 Ó©ÑÓ©öÓ©ùÓ©▒Ó©ÖÓ©ùÓ©Á', NULL, NULL, 1, '2026-04-07 17:21:46'),
-(13, 22, 'review_remind', 'Ó©¡Ó©¡Ó╣ÇÓ©öÓ©¡Ó©úÓ╣îÓ©éÓ©¡Ó©çÓ©äÓ©©Ó©ôÓ©üÓ©│Ó©ÑÓ©▒Ó©çÓ╣ÇÓ©öÓ©┤Ó©ÖÓ©ùÓ©▓Ó©ç!', 'Ó╣âÓ©èÓ╣ëÓ╣éÓ©äÓ╣ëÓ©ö SHOPEE50 Ó©ÑÓ©öÓ©ùÓ©▒Ó©ÖÓ©ùÓ©Á', NULL, NULL, 1, '2026-04-07 17:21:46'),
-(14, 23, 'promotion', 'โปรโมชั่นใหม่', 'Ó©¬Ó©┤Ó©ÖÓ©äÓ╣ëÓ©▓Ó©éÓ©¡Ó©çÓ©äÓ©©Ó©ôÓ©ûÓ©╣Ó©üÓ©êÓ©▒Ó©öÓ©¬Ó╣êÓ©çÓ╣üÓ©ÑÓ╣ëÓ©º', NULL, NULL, 0, '2026-04-07 17:21:46'),
+(13, 22, 'review_remind', 'ยินดีต้อนรับ!', 'ยินดีต้อนรับสู่ Shopee Thailand แหล่งรวมสินค้าราคาสุดคุ้ม!', NULL, NULL, 1, '2026-04-07 17:21:46'),
+(14, 23, 'promotion', 'ยินดีต้อนรับ!', 'ยินดีต้อนรับสู่ Shopee Thailand แหล่งรวมสินค้าราคาสุดคุ้ม!', NULL, NULL, 0, '2026-04-07 17:21:46'),
 (15, 24, 'order_update', 'อัพเดทสถานะออเดอร์', 'Ó╣âÓ©èÓ╣ëÓ╣éÓ©äÓ╣ëÓ©ö SHOPEE50 Ó©ÑÓ©öÓ©ùÓ©▒Ó©ÖÓ©ùÓ©Á', NULL, NULL, 1, '2026-04-07 17:21:46'),
-(16, 25, 'review_remind', 'Ó©¡Ó©¡Ó╣ÇÓ©öÓ©¡Ó©úÓ╣îÓ©éÓ©¡Ó©çÓ©äÓ©©Ó©ôÓ©üÓ©│Ó©ÑÓ©▒Ó©çÓ╣ÇÓ©öÓ©┤Ó©ÖÓ©ùÓ©▓Ó©ç!', 'Ó©¬Ó©┤Ó©ÖÓ©äÓ╣ëÓ©▓Ó©éÓ©¡Ó©çÓ©äÓ©©Ó©ôÓ©ûÓ©╣Ó©üÓ©êÓ©▒Ó©öÓ©¬Ó╣êÓ©çÓ╣üÓ©ÑÓ╣ëÓ©º', NULL, NULL, 1, '2026-04-07 17:21:46'),
-(17, 26, 'flash_sale', 'Ó©¡Ó©¡Ó╣ÇÓ©öÓ©¡Ó©úÓ╣îÓ©éÓ©¡Ó©çÓ©äÓ©©Ó©ôÓ©üÓ©│Ó©ÑÓ©▒Ó©çÓ╣ÇÓ©öÓ©┤Ó©ÖÓ©ùÓ©▓Ó©ç!', 'Ó©¡Ó©óÓ╣êÓ©▓Ó©×Ó©ÑÓ©▓Ó©ö Ó©úÓ©▓Ó©äÓ©▓Ó©öÓ©ÁÓ╣üÓ©äÓ╣êÓ©ºÓ©▒Ó©ÖÓ©ÖÓ©ÁÓ╣ë', NULL, NULL, 0, '2026-04-07 17:21:46'),
-(18, 27, 'flash_sale', 'Ó©¡Ó©¡Ó╣ÇÓ©öÓ©¡Ó©úÓ╣îÓ©éÓ©¡Ó©çÓ©äÓ©©Ó©ôÓ©üÓ©│Ó©ÑÓ©▒Ó©çÓ╣ÇÓ©öÓ©┤Ó©ÖÓ©ùÓ©▓Ó©ç!', 'Ó©¬Ó©┤Ó©ÖÓ©äÓ╣ëÓ©▓Ó©ùÓ©ÁÓ╣êÓ©¬Ó©▒Ó╣êÓ©çÓ©úÓ©¡Ó©üÓ©▓Ó©úÓ©úÓ©ÁÓ©ºÓ©┤Ó©º', NULL, NULL, 0, '2026-04-07 17:21:46'),
-(19, 28, 'flash_sale', 'Flash Sale Ó╣ÇÓ©úÓ©┤Ó╣êÓ©íÓ╣üÓ©ÑÓ╣ëÓ©º!', 'Ó©¬Ó©┤Ó©ÖÓ©äÓ╣ëÓ©▓Ó©ùÓ©ÁÓ╣êÓ©¬Ó©▒Ó╣êÓ©çÓ©úÓ©¡Ó©üÓ©▓Ó©úÓ©úÓ©ÁÓ©ºÓ©┤Ó©º', NULL, NULL, 1, '2026-04-07 17:21:46'),
-(20, 29, 'order_update', 'อัพเดทสถานะออเดอร์', 'Ó©¬Ó©┤Ó©ÖÓ©äÓ╣ëÓ©▓Ó©éÓ©¡Ó©çÓ©äÓ©©Ó©ôÓ©ûÓ©╣Ó©üÓ©êÓ©▒Ó©öÓ©¬Ó╣êÓ©çÓ╣üÓ©ÑÓ╣ëÓ©º', NULL, NULL, 1, '2026-04-07 17:21:46'),
-(21, 30, 'flash_sale', 'Flash Sale Ó╣ÇÓ©úÓ©┤Ó╣êÓ©íÓ╣üÓ©ÑÓ╣ëÓ©º!', 'Ó©¬Ó©┤Ó©ÖÓ©äÓ╣ëÓ©▓Ó©éÓ©¡Ó©çÓ©äÓ©©Ó©ôÓ©ûÓ©╣Ó©üÓ©êÓ©▒Ó©öÓ©¬Ó╣êÓ©çÓ╣üÓ©ÑÓ╣ëÓ©º', NULL, NULL, 1, '2026-04-07 17:21:46'),
+(16, 25, 'review_remind', 'ยินดีต้อนรับ!', 'ยินดีต้อนรับสู่ Shopee Thailand แหล่งรวมสินค้าราคาสุดคุ้ม!', NULL, NULL, 1, '2026-04-07 17:21:46'),
+(17, 26, 'flash_sale', 'ยินดีต้อนรับ!', 'ยินดีต้อนรับสู่ Shopee Thailand แหล่งรวมสินค้าราคาสุดคุ้ม!', NULL, NULL, 0, '2026-04-07 17:21:46'),
+(18, 27, 'flash_sale', 'ยินดีต้อนรับ!', 'ยินดีต้อนรับสู่ Shopee Thailand แหล่งรวมสินค้าราคาสุดคุ้ม!', NULL, NULL, 0, '2026-04-07 17:21:46'),
+(19, 28, 'flash_sale', 'ยินดีต้อนรับ!', 'ยินดีต้อนรับสู่ Shopee Thailand แหล่งรวมสินค้าราคาสุดคุ้ม!', NULL, NULL, 1, '2026-04-07 17:21:46'),
+(20, 29, 'order_update', 'ยินดีต้อนรับ!', 'ยินดีต้อนรับสู่ Shopee Thailand แหล่งรวมสินค้าราคาสุดคุ้ม!', NULL, NULL, 1, '2026-04-07 17:21:46'),
+(21, 30, 'flash_sale', 'ยินดีต้อนรับ!', 'ยินดีต้อนรับสู่ Shopee Thailand แหล่งรวมสินค้าราคาสุดคุ้ม!', NULL, NULL, 1, '2026-04-07 17:21:46'),
 (22, 31, 'promotion', 'โปรโมชั่นใหม่', 'Ó╣âÓ©èÓ╣ëÓ╣éÓ©äÓ╣ëÓ©ö SHOPEE50 Ó©ÑÓ©öÓ©ùÓ©▒Ó©ÖÓ©ùÓ©Á', NULL, NULL, 0, '2026-04-07 17:21:46'),
-(23, 32, 'promotion', 'โปรโมชั่นใหม่', 'Ó©¡Ó©óÓ╣êÓ©▓Ó©×Ó©ÑÓ©▓Ó©ö Ó©úÓ©▓Ó©äÓ©▓Ó©öÓ©ÁÓ╣üÓ©äÓ╣êÓ©ºÓ©▒Ó©ÖÓ©ÖÓ©ÁÓ╣ë', NULL, NULL, 0, '2026-04-07 17:21:46'),
-(24, 33, 'order_update', 'อัพเดทสถานะออเดอร์', 'Ó©¬Ó©┤Ó©ÖÓ©äÓ╣ëÓ©▓Ó©ùÓ©ÁÓ╣êÓ©¬Ó©▒Ó╣êÓ©çÓ©úÓ©¡Ó©üÓ©▓Ó©úÓ©úÓ©ÁÓ©ºÓ©┤Ó©º', NULL, NULL, 0, '2026-04-07 17:21:46'),
+(23, 32, 'promotion', 'ยินดีต้อนรับ!', 'ยินดีต้อนรับสู่ Shopee Thailand แหล่งรวมสินค้าราคาสุดคุ้ม!', NULL, NULL, 0, '2026-04-07 17:21:46'),
+(24, 33, 'order_update', 'ยินดีต้อนรับ!', 'ยินดีต้อนรับสู่ Shopee Thailand แหล่งรวมสินค้าราคาสุดคุ้ม!', NULL, NULL, 0, '2026-04-07 17:21:46'),
 (25, 34, 'promotion', 'โปรโมชั่นใหม่', 'Ó╣âÓ©èÓ╣ëÓ╣éÓ©äÓ╣ëÓ©ö SHOPEE50 Ó©ÑÓ©öÓ©ùÓ©▒Ó©ÖÓ©ùÓ©Á', NULL, NULL, 0, '2026-04-07 17:21:46');
 
 -- --------------------------------------------------------
@@ -887,7 +890,72 @@ INSERT INTO `orders` (`order_id`, `order_number`, `buyer_user_id`, `shop_id`, `a
 (56, 'ORD-20260407-030447', 61, 3, 38, 1, NULL, NULL, 599.00, 0.00, 0.00, 0.00, 0.00, 599.00, 'cod', 'pending', 'cancelled', '', NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-07 20:12:53', '2026-04-07 20:33:11'),
 (57, 'ORD-20260407-056969', 61, 1, 38, 4, NULL, NULL, 29990.00, 0.00, 0.00, 0.00, 0.00, 29990.00, 'shopee_pay', 'pending', 'pending', '', NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-07 20:35:01', '2026-04-07 20:35:01'),
 (58, 'ORD-20260407-088560', 63, 1, 39, 1, NULL, NULL, 209930.00, 0.00, 0.00, 0.00, 0.00, 209930.00, 'cod', 'pending', 'pending', '', NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-07 20:59:49', '2026-04-07 20:59:49'),
-(59, 'ORD-20260407-089194', 63, 4, 39, 1, NULL, NULL, 750.00, 0.00, 0.00, 0.00, 0.00, 750.00, 'cod', 'pending', 'cancelled', '', NULL, NULL, NULL, NULL, '2026-04-07 20:59:57', NULL, '2026-04-07 20:59:49', '2026-04-07 20:59:57');
+(59, 'ORD-20260407-089194', 63, 4, 39, 1, NULL, NULL, 750.00, 0.00, 0.00, 0.00, 0.00, 750.00, 'cod', 'pending', 'cancelled', '', NULL, NULL, NULL, NULL, '2026-04-07 20:59:57', NULL, '2026-04-07 20:59:49', '2026-04-07 20:59:57'),
+(66, 'ORD-REF-344976', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 2110.00, 'cod', 'paid', 'delivered', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-24 22:12:10', '2026-04-07 22:12:10'),
+(67, 'ORD-REF-829231', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 1280.00, 'cod', 'pending', 'shipped', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-13 22:12:10', '2026-04-07 22:12:10'),
+(68, 'ORD-REF-954830', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 8408.00, 'cod', 'paid', 'completed', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-30 22:12:10', '2026-04-07 22:12:10'),
+(69, 'ORD-REF-639734', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 6990.00, 'cod', 'paid', 'delivered', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-07 22:12:10', '2026-04-07 22:12:10'),
+(70, 'ORD-REF-917828', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 3002.00, 'cod', 'paid', 'completed', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-30 22:12:10', '2026-04-07 22:12:10'),
+(71, 'ORD-REF-534831', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 500.00, 'cod', 'paid', 'shipped', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-27 22:12:10', '2026-04-07 22:12:10'),
+(72, 'ORD-REF-940825', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 3087.00, 'cod', 'pending', 'processing', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-02 22:12:10', '2026-04-07 22:12:10'),
+(73, 'ORD-REF-284861', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 7792.00, 'cod', 'paid', 'shipped', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-16 22:12:10', '2026-04-07 22:12:10'),
+(74, 'ORD-REF-873070', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 5662.00, 'cod', 'paid', 'pending', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-02 22:12:10', '2026-04-07 22:12:10'),
+(75, 'ORD-REF-187589', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 8307.00, 'cod', 'paid', 'delivered', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-28 22:12:10', '2026-04-07 22:12:10'),
+(76, 'ORD-REF-338797', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 373.00, 'cod', 'paid', 'delivered', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-06 22:12:10', '2026-04-07 22:12:10'),
+(77, 'ORD-REF-276767', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 1642.00, 'cod', 'paid', 'completed', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-03 22:12:10', '2026-04-07 22:12:10'),
+(78, 'ORD-REF-121543', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 2720.00, 'cod', 'paid', 'processing', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-06 22:12:10', '2026-04-07 22:12:10'),
+(79, 'ORD-REF-599314', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 1751.00, 'cod', 'paid', 'processing', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-31 22:12:10', '2026-04-07 22:12:10'),
+(80, 'ORD-REF-237273', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 7264.00, 'cod', 'paid', 'processing', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-24 22:12:10', '2026-04-07 22:12:10'),
+(81, 'ORD-REF-491563', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 6261.00, 'cod', 'paid', 'delivered', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-20 22:12:10', '2026-04-07 22:12:10'),
+(82, 'ORD-REF-470754', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 8145.00, 'cod', 'paid', 'completed', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-16 22:12:10', '2026-04-07 22:12:10'),
+(83, 'ORD-REF-600493', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 2910.00, 'cod', 'pending', 'completed', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-28 22:12:10', '2026-04-07 22:12:10'),
+(84, 'ORD-REF-807596', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 4174.00, 'cod', 'paid', 'delivered', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-20 22:12:10', '2026-04-07 22:12:10'),
+(85, 'ORD-REF-372838', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 839.00, 'cod', 'pending', 'completed', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-16 22:12:10', '2026-04-07 22:12:10'),
+(86, 'ORD-REF-120834', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 363.00, 'cod', 'paid', 'shipped', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-10 22:12:10', '2026-04-07 22:12:10'),
+(87, 'ORD-REF-381336', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 6940.00, 'cod', 'paid', 'completed', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-11 22:12:10', '2026-04-07 22:12:10'),
+(88, 'ORD-REF-195593', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 1527.00, 'cod', 'paid', 'pending', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-23 22:12:10', '2026-04-07 22:12:10'),
+(89, 'ORD-REF-493033', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 2696.00, 'cod', 'paid', 'pending', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-04 22:12:10', '2026-04-07 22:12:10'),
+(90, 'ORD-REF-368267', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 8092.00, 'cod', 'paid', 'shipped', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-28 22:12:10', '2026-04-07 22:12:10'),
+(91, 'ORD-REF-767880', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 3676.00, 'cod', 'paid', 'delivered', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-19 22:12:10', '2026-04-07 22:12:10'),
+(92, 'ORD-REF-939263', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 2869.00, 'cod', 'paid', 'delivered', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-20 22:12:10', '2026-04-07 22:12:10'),
+(93, 'ORD-REF-876076', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 6610.00, 'cod', 'paid', 'pending', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-25 22:12:10', '2026-04-07 22:12:10'),
+(94, 'ORD-REF-479526', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 7880.00, 'cod', 'paid', 'processing', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-14 22:12:10', '2026-04-07 22:12:10'),
+(95, 'ORD-REF-314164', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 7433.00, 'cod', 'paid', 'delivered', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-06 22:12:10', '2026-04-07 22:12:10'),
+(96, 'ORD-REF-679713', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 3595.00, 'cod', 'pending', 'completed', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-24 22:12:10', '2026-04-07 22:12:10'),
+(97, 'ORD-REF-150336', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 7963.00, 'cod', 'paid', 'completed', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-05 22:12:10', '2026-04-07 22:12:10'),
+(98, 'ORD-REF-717708', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 7005.00, 'cod', 'paid', 'delivered', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-30 22:12:10', '2026-04-07 22:12:10'),
+(99, 'ORD-REF-603518', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 4202.00, 'cod', 'paid', 'pending', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-14 22:12:10', '2026-04-07 22:12:10'),
+(100, 'ORD-REF-184280', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 3558.00, 'cod', 'paid', 'shipped', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-23 22:12:10', '2026-04-07 22:12:10'),
+(101, 'ORD-REF-501478', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 5133.00, 'cod', 'pending', 'delivered', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-27 22:12:10', '2026-04-07 22:12:10'),
+(102, 'ORD-REF-649821', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 1671.00, 'cod', 'paid', 'shipped', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-07 22:12:10', '2026-04-07 22:12:10'),
+(103, 'ORD-REF-808893', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 7958.00, 'cod', 'paid', 'completed', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-16 22:12:10', '2026-04-07 22:12:10'),
+(104, 'ORD-REF-488393', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 1848.00, 'cod', 'paid', 'completed', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-04 22:12:10', '2026-04-07 22:12:10'),
+(105, 'ORD-REF-663879', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 1049.00, 'cod', 'paid', 'processing', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-16 22:12:10', '2026-04-07 22:12:10'),
+(106, 'ORD-REF-661500', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 1857.00, 'cod', 'paid', 'shipped', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-13 22:12:10', '2026-04-07 22:12:10'),
+(107, 'ORD-REF-404606', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 3927.00, 'cod', 'paid', 'delivered', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-04 22:12:10', '2026-04-07 22:12:10'),
+(108, 'ORD-REF-328211', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 5674.00, 'cod', 'paid', 'shipped', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-21 22:12:10', '2026-04-07 22:12:10'),
+(109, 'ORD-REF-840763', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 1819.00, 'cod', 'pending', 'processing', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-02 22:12:10', '2026-04-07 22:12:10'),
+(110, 'ORD-REF-491147', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 3091.00, 'cod', 'pending', 'pending', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-08 22:12:10', '2026-04-07 22:12:10'),
+(111, 'ORD-REF-940572', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 4627.00, 'cod', 'paid', 'shipped', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-12 22:12:10', '2026-04-07 22:12:10'),
+(112, 'ORD-REF-692482', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 3851.00, 'cod', 'paid', 'delivered', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-31 22:12:10', '2026-04-07 22:12:10'),
+(113, 'ORD-REF-450689', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 3035.00, 'cod', 'pending', 'completed', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-05 22:12:10', '2026-04-07 22:12:10'),
+(114, 'ORD-REF-239415', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 6726.00, 'cod', 'pending', 'processing', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-02 22:12:10', '2026-04-07 22:12:10'),
+(115, 'ORD-REF-326409', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 8263.00, 'cod', 'pending', 'completed', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-09 22:12:10', '2026-04-07 22:12:10'),
+(116, 'ORD-REF-206163', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 1848.00, 'cod', 'paid', 'completed', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-26 22:12:10', '2026-04-07 22:12:10'),
+(117, 'ORD-REF-611599', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 7597.00, 'cod', 'paid', 'processing', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-15 22:12:10', '2026-04-07 22:12:10'),
+(118, 'ORD-REF-480804', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 8069.00, 'cod', 'paid', 'processing', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-08 22:12:10', '2026-04-07 22:12:10'),
+(119, 'ORD-REF-895753', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 1463.00, 'cod', 'paid', 'delivered', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-08 22:12:10', '2026-04-07 22:12:10'),
+(120, 'ORD-REF-889738', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 7907.00, 'cod', 'paid', 'completed', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-17 22:12:10', '2026-04-07 22:12:10'),
+(121, 'ORD-REF-640500', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 1666.00, 'cod', 'paid', 'completed', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-07 22:12:10', '2026-04-07 22:12:10'),
+(122, 'ORD-REF-145808', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 1867.00, 'cod', 'pending', 'delivered', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-28 22:12:10', '2026-04-07 22:12:10'),
+(123, 'ORD-REF-939962', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 4017.00, 'cod', 'paid', 'completed', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-16 22:12:10', '2026-04-07 22:12:10'),
+(124, 'ORD-REF-188848', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 3461.00, 'cod', 'paid', 'delivered', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-16 22:12:10', '2026-04-07 22:12:10'),
+(125, 'ORD-REF-725714', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 2686.00, 'cod', 'pending', 'delivered', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-02 22:12:10', '2026-04-07 22:12:10'),
+(126, 'ORD-REF-150397', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 5116.00, 'cod', 'paid', 'pending', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-05 22:12:10', '2026-04-07 22:12:10'),
+(127, 'ORD-REF-555792', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 7448.00, 'cod', 'paid', 'delivered', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-02 22:12:10', '2026-04-07 22:12:10'),
+(128, 'ORD-REF-440820', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 4934.00, 'cod', 'paid', 'processing', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-11 22:12:10', '2026-04-07 22:12:10'),
+(129, 'ORD-REF-545778', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 6991.00, 'cod', 'paid', 'shipped', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-04-04 22:12:10', '2026-04-07 22:12:10'),
+(130, 'ORD-REF-538278', 6, 1, 1, NULL, NULL, NULL, 0.00, 0.00, 0.00, 0.00, 0.00, 7959.00, 'cod', 'paid', 'processing', NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2026-03-13 22:12:10', '2026-04-07 22:12:10');
 
 -- --------------------------------------------------------
 
@@ -924,22 +992,22 @@ INSERT INTO `order_items` (`item_id`, `order_id`, `product_id`, `sku_id`, `produ
 (8, 33, 6, NULL, 'Ceramic Non-Stick Frying Pan 28cm', NULL, 'https://cdn.shopee.th/img/ceramic-nonstick-frypan-28.jpg', 3990.00, 1, 3990.00, NULL),
 (9, 34, 1, NULL, 'Samsung Galaxy S24 Ultra 256GB', NULL, 'https://cdn.shopee.th/img/samsung-galaxy-s24-ultra-256.jpg', 46900.00, 1, 46900.00, NULL),
 (10, 35, 24, NULL, 'Ó╣ÇÓ©ïÓ©úÓ©▒Ó╣êÓ©íÓ©ºÓ©┤Ó©òÓ©▓Ó©íÓ©┤Ó©ÖÓ©ïÓ©Á Skinsation', NULL, 'https://cdn.shopee.th/img/serum-vitc-skinsation.jpg', 750.00, 1, 750.00, NULL),
-(11, 36, 28, NULL, 'Ó©öÓ©▒Ó©íÓ╣ÇÓ©ÜÓ©ÑÓ©ÖÓ╣ëÓ©│Ó©½Ó©ÖÓ©▒Ó©üÓ©øÓ©úÓ©▒Ó©ÜÓ╣äÓ©öÓ╣ë 2-24kg', NULL, 'https://cdn.shopee.th/img/adjustable-dumbbell-24.jpg', 3490.00, 1, 3490.00, NULL),
+(11, 36, 28, NULL, 'แปรงสีฟันไฟฟ้า โหมด Whitening', NULL, 'https://cdn.shopee.th/img/adjustable-dumbbell-24.jpg', 3490.00, 1, 3490.00, NULL),
 (12, 37, 4, NULL, 'Oversized Pastel Hoodie', NULL, 'https://cdn.shopee.th/img/oversized-pastel-hoodie.jpg', 990.00, 1, 990.00, NULL),
 (13, 38, 1, NULL, 'Samsung Galaxy S24 Ultra 256GB', NULL, 'https://cdn.shopee.th/img/samsung-galaxy-s24-ultra-256.jpg', 2990.00, 1, 2990.00, NULL),
 (14, 39, 6, NULL, 'Ceramic Non-Stick Frying Pan 28cm', NULL, 'https://cdn.shopee.th/img/ceramic-nonstick-frypan-28.jpg', 1590.00, 1, 1590.00, NULL),
 (15, 40, 24, NULL, 'Ó╣ÇÓ©ïÓ©úÓ©▒Ó╣êÓ©íÓ©ºÓ©┤Ó©òÓ©▓Ó©íÓ©┤Ó©ÖÓ©ïÓ©Á Skinsation', NULL, 'https://cdn.shopee.th/img/serum-vitc-skinsation.jpg', 280.00, 1, 280.00, NULL),
-(16, 41, 28, NULL, 'Ó©öÓ©▒Ó©íÓ╣ÇÓ©ÜÓ©ÑÓ©ÖÓ╣ëÓ©│Ó©½Ó©ÖÓ©▒Ó©üÓ©øÓ©úÓ©▒Ó©ÜÓ╣äÓ©öÓ╣ë 2-24kg', NULL, 'https://cdn.shopee.th/img/adjustable-dumbbell-24.jpg', 590.00, 1, 590.00, NULL),
+(16, 41, 28, NULL, 'แปรงสีฟันไฟฟ้า โหมด Whitening', NULL, 'https://cdn.shopee.th/img/adjustable-dumbbell-24.jpg', 590.00, 1, 590.00, NULL),
 (17, 42, 1, NULL, 'Samsung Galaxy S24 Ultra 256GB', NULL, 'https://cdn.shopee.th/img/samsung-galaxy-s24-ultra-256.jpg', 84900.00, 1, 84900.00, NULL),
 (18, 43, 4, NULL, 'Oversized Pastel Hoodie', NULL, 'https://cdn.shopee.th/img/oversized-pastel-hoodie.jpg', 1290.00, 1, 1290.00, NULL),
 (19, 44, 6, NULL, 'Ceramic Non-Stick Frying Pan 28cm', NULL, 'https://cdn.shopee.th/img/ceramic-nonstick-frypan-28.jpg', 4200.00, 1, 4200.00, NULL),
 (20, 45, 24, NULL, 'Ó╣ÇÓ©ïÓ©úÓ©▒Ó╣êÓ©íÓ©ºÓ©┤Ó©òÓ©▓Ó©íÓ©┤Ó©ÖÓ©ïÓ©Á Skinsation', NULL, 'https://cdn.shopee.th/img/serum-vitc-skinsation.jpg', 990.00, 1, 990.00, NULL),
-(21, 46, 28, NULL, 'Ó©öÓ©▒Ó©íÓ╣ÇÓ©ÜÓ©ÑÓ©ÖÓ╣ëÓ©│Ó©½Ó©ÖÓ©▒Ó©üÓ©øÓ©úÓ©▒Ó©ÜÓ╣äÓ©öÓ╣ë 2-24kg', NULL, 'https://cdn.shopee.th/img/adjustable-dumbbell-24.jpg', 13500.00, 1, 13500.00, NULL),
+(21, 46, 28, NULL, 'แปรงสีฟันไฟฟ้า โหมด Whitening', NULL, 'https://cdn.shopee.th/img/adjustable-dumbbell-24.jpg', 13500.00, 1, 13500.00, NULL),
 (22, 47, 1, NULL, 'Samsung Galaxy S24 Ultra 256GB', NULL, 'https://cdn.shopee.th/img/samsung-galaxy-s24-ultra-256.jpg', 9490.00, 1, 9490.00, NULL),
 (23, 48, 4, NULL, 'Oversized Pastel Hoodie', NULL, 'https://cdn.shopee.th/img/oversized-pastel-hoodie.jpg', 690.00, 1, 690.00, NULL),
 (24, 49, 6, NULL, 'Ceramic Non-Stick Frying Pan 28cm', NULL, 'https://cdn.shopee.th/img/ceramic-nonstick-frypan-28.jpg', 3990.00, 1, 3990.00, NULL),
 (25, 50, 24, NULL, 'Ó╣ÇÓ©ïÓ©úÓ©▒Ó╣êÓ©íÓ©ºÓ©┤Ó©òÓ©▓Ó©íÓ©┤Ó©ÖÓ©ïÓ©Á Skinsation', NULL, 'https://cdn.shopee.th/img/serum-vitc-skinsation.jpg', 750.00, 1, 750.00, NULL),
-(26, 51, 28, NULL, 'Ó©öÓ©▒Ó©íÓ╣ÇÓ©ÜÓ©ÑÓ©ÖÓ╣ëÓ©│Ó©½Ó©ÖÓ©▒Ó©üÓ©øÓ©úÓ©▒Ó©ÜÓ╣äÓ©öÓ╣ë 2-24kg', NULL, 'https://cdn.shopee.th/img/adjustable-dumbbell-24.jpg', 13900.00, 1, 13900.00, NULL),
+(26, 51, 28, NULL, 'แปรงสีฟันไฟฟ้า โหมด Whitening', NULL, 'https://cdn.shopee.th/img/adjustable-dumbbell-24.jpg', 13900.00, 1, 13900.00, NULL),
 (27, 52, 1, NULL, 'Samsung Galaxy S24 Ultra 256GB', NULL, 'https://cdn.shopee.th/img/samsung-galaxy-s24-ultra-256.jpg', 2990.00, 1, 2990.00, NULL),
 (28, 53, 4, NULL, 'Oversized Pastel Hoodie', NULL, 'https://cdn.shopee.th/img/oversized-pastel-hoodie.jpg', 490.00, 1, 490.00, NULL),
 (29, 54, 6, NULL, 'Ceramic Non-Stick Frying Pan 28cm', NULL, 'https://cdn.shopee.th/img/ceramic-nonstick-frypan-28.jpg', 1590.00, 1, 1590.00, NULL),
@@ -1201,24 +1269,24 @@ INSERT INTO `permissions` (`perm_id`, `perm_key`, `label`, `perm_group`, `descri
 (4, 'users.delete', 'ลบผู้ใช้', 'users', NULL),
 (5, 'shops.view', 'ดูร้านค้า', 'shops', NULL),
 (6, 'shops.edit', 'แก้ไขร้านค้า', 'shops', NULL),
-(7, 'shops.ban', 'Ó©úÓ©░Ó©çÓ©▒Ó©ÜÓ©úÓ╣ëÓ©▓Ó©ÖÓ©äÓ╣ëÓ©▓', 'shops', NULL),
+(7, 'shops.ban', 'ระงับร้านค้า', 'shops', NULL),
 (8, 'products.view', 'ดูสินค้า', 'products', NULL),
 (9, 'products.edit', 'แก้ไขสินค้า', 'products', NULL),
 (10, 'products.delete', 'ลบสินค้า', 'products', NULL),
 (11, 'orders.view', 'ดูคำสั่งซื้อ', 'orders', NULL),
 (12, 'orders.edit', 'แก้ไขคำสั่งซื้อ', 'orders', NULL),
-(13, 'reviews.view', 'Ó©öÓ©╣Ó©úÓ©ÁÓ©ºÓ©┤Ó©º', 'reviews', NULL),
-(14, 'reviews.hide', 'Ó©ïÓ╣êÓ©¡Ó©Ö/Ó╣üÓ©¬Ó©öÓ©çÓ©úÓ©ÁÓ©ºÓ©┤Ó©º', 'reviews', NULL),
-(15, 'vouchers.manage', 'Ó©êÓ©▒Ó©öÓ©üÓ©▓Ó©úÓ╣éÓ©äÓ╣ëÓ©öÓ©¬Ó╣êÓ©ºÓ©ÖÓ©ÑÓ©ö', 'vouchers', NULL),
+(13, 'reviews.view', 'ดูรีวิว', 'reviews', NULL),
+(14, 'reviews.hide', 'ซ่อน/แสดงรีวิว', 'reviews', NULL),
+(15, 'vouchers.manage', 'จัดการคูปองส่วนลด', 'vouchers', NULL),
 (16, 'flash_sales.manage', 'Ó©êÓ©▒Ó©öÓ©üÓ©▓Ó©ú Flash Sale', 'promotions', NULL),
-(17, 'banners.manage', 'Ó©êÓ©▒Ó©öÓ©üÓ©▓Ó©úÓ╣üÓ©ÜÓ©ÖÓ╣ÇÓ©ÖÓ©¡Ó©úÓ╣î', 'promotions', NULL),
+(17, 'banners.manage', 'จัดการแบนเนอร์', 'promotions', NULL),
 (18, 'reports.view', 'ดูรายงาน', 'reports', NULL),
-(19, 'cms.pages', 'Ó©êÓ©▒Ó©öÓ©üÓ©▓Ó©úÓ©½Ó©ÖÓ╣ëÓ©▓Ó╣ÇÓ©ºÓ╣çÓ©Ü', 'cms', NULL),
-(20, 'cms.menus', 'Ó©êÓ©▒Ó©öÓ©üÓ©▓Ó©úÓ╣ÇÓ©íÓ©ÖÓ©╣', 'cms', NULL),
-(21, 'cms.widgets', 'Ó©êÓ©▒Ó©öÓ©üÓ©▓Ó©ú Widget', 'cms', NULL),
-(22, 'settings.general', 'Ó©òÓ©▒Ó╣ëÓ©çÓ©äÓ╣êÓ©▓Ó©ùÓ©▒Ó╣êÓ©ºÓ╣äÓ©ø', 'settings', NULL),
-(23, 'settings.payment', 'Ó©òÓ©▒Ó╣ëÓ©çÓ©äÓ╣êÓ©▓Ó©üÓ©▓Ó©úÓ©èÓ©│Ó©úÓ©░Ó╣ÇÓ©çÓ©┤Ó©Ö', 'settings', NULL),
-(24, 'settings.shipping', 'Ó©òÓ©▒Ó╣ëÓ©çÓ©äÓ╣êÓ©▓Ó©üÓ©▓Ó©úÓ©êÓ©▒Ó©öÓ©¬Ó╣êÓ©ç', 'settings', NULL);
+(19, 'cms.pages', 'จัดการหน้าเว็บไซต์', 'cms', NULL),
+(20, 'cms.menus', 'จัดการเมนู', 'cms', NULL),
+(21, 'cms.widgets', 'จัดการ Widget', 'cms', NULL),
+(22, 'settings.general', 'ตั้งค่าทั่วไป', 'settings', NULL),
+(23, 'settings.payment', 'ตั้งค่าการชำระเงิน', 'settings', NULL),
+(24, 'settings.shipping', 'ตั้งค่าการจัดส่ง', 'settings', NULL);
 
 -- --------------------------------------------------------
 
@@ -1351,8 +1419,8 @@ INSERT INTO `product_answers` (`answer_id`, `question_id`, `answerer_id`, `answe
 (1, 1, 3, 'seller', 'รองรับ 5G ครบทุก Band ที่ใช้ในไทย รวมทั้ง Sub-6GHz และ mmWave ด้วย', 1, '2026-04-07 17:17:47'),
 (2, 2, 3, 'seller', 'หน้าจอ 6.8 นิ้ว ไม่พับได้ แต่มาพร้อมกระจกกันรอย Gorilla Glass น้ำหนัก 232 กรัม', 1, '2026-04-07 17:17:47'),
 (3, 3, 3, 'seller', 'เหมาะมากสำหรับนักศึกษา มี RAM มาให้พร้อม รองรับ Software นักศึกษาได้สบาย แบตอยู่ได้ทั้งวัน', 1, '2026-04-07 17:17:47'),
-(4, 4, 3, 'seller', 'Ó©ÖÓ╣ëÓ©│Ó©½Ó©ÖÓ©▒Ó©üÓ╣ÇÓ©ÜÓ©▓Ó©íÓ©▓Ó©üÓ©äÓ╣êÓ©░ Ó╣üÓ©äÓ╣ê 250 Ó©üÓ©úÓ©▒Ó©í Ó╣âÓ©¬Ó╣êÓ©ÖÓ©▓Ó©ÖÓ╣å Ó╣äÓ©íÓ╣êÓ╣ÇÓ©íÓ©ÀÓ╣êÓ©¡Ó©ó', 1, '2026-04-07 17:17:47'),
-(5, 5, 4, 'seller', 'Ó╣äÓ©ïÓ©¬Ó╣î M Ó©äÓ©ºÓ©▓Ó©íÓ©¬Ó©╣Ó©ç 165-175 Ó╣ÇÓ©½Ó©íÓ©▓Ó©░Ó©íÓ©▓Ó©üÓ╣ÇÓ©ÑÓ©óÓ©äÓ©úÓ©▒Ó©Ü Ó╣üÓ©òÓ╣êÓ©ûÓ╣ëÓ©▓Ó©èÓ©¡Ó©Ü Oversized Ó©íÓ©▓Ó©üÓ╣å Ó©éÓ©ÂÓ╣ëÓ©Ö L Ó╣äÓ©öÓ╣ëÓ╣ÇÓ©ÑÓ©ó', 1, '2026-04-07 17:17:47');
+(4, 4, 3, 'seller', 'น้ำหนักเบามากครับ แค่ 250 กรัม ใส่ได้นาน ไม่เจ็บหูครับ', 1, '2026-04-07 17:17:47'),
+(5, 5, 4, 'seller', 'ไซส์ M ความสูง 175 เซนติเมตรใส่ได้ครับ แต่ถ้าชอบแบบโอเวอร์ไซส์หน่อย แนะนำ L ครับ', 1, '2026-04-07 17:17:47');
 
 -- --------------------------------------------------------
 
@@ -1378,7 +1446,7 @@ CREATE TABLE `product_bans` (
 --
 
 INSERT INTO `product_bans` (`ban_id`, `product_id`, `banned_by`, `reason`, `ban_category`, `is_active`, `unbanned_by`, `unban_reason`, `unbanned_at`, `created_at`) VALUES
-(1, 5, 11, 'Ó©¬Ó©┤Ó©ÖÓ©äÓ╣ëÓ©▓Ó©ÑÓ©¡Ó©üÓ╣ÇÓ©ÑÓ©ÁÓ©óÓ©ÖÓ╣üÓ©ÜÓ©ÜÓ©òÓ©úÓ©▓Ó©¬Ó©┤Ó©ÖÓ©äÓ╣ëÓ©▓', 'counterfeit', 0, NULL, NULL, NULL, '2026-04-07 17:17:46');
+(1, 5, 11, 'สินค้าละเมิดนโยบายการขายหรือพบข้อผิดพลาดในข้อมูล', 'counterfeit', 0, NULL, NULL, NULL, '2026-04-07 17:17:46');
 
 -- --------------------------------------------------------
 
@@ -1522,9 +1590,9 @@ INSERT INTO `product_questions` (`question_id`, `product_id`, `user_id`, `questi
 (1, 1, 7, 'Samsung S24 Ultra รองรับเครือข่าย 5G หรือไม่?', 0, 'answered', '2026-04-07 17:17:47'),
 (2, 1, 8, 'หน้าจอ 6.8 นิ้ว พับได้หรือมีกระจกกันรอยไหม?', 0, 'answered', '2026-04-07 17:17:47'),
 (3, 2, 9, 'MacBook Air M3 ใช้งานนักศึกษาได้ไหม?', 0, 'answered', '2026-04-07 17:17:47'),
-(4, 3, 6, 'Sony XM5 Ó╣âÓ©¬Ó╣êÓ╣üÓ©ÑÓ╣ëÓ©ºÓ©½Ó©ÖÓ©▒Ó©üÓ©íÓ©▒Ó╣ëÓ©óÓ©äÓ©░?', 0, 'answered', '2026-04-07 17:17:47'),
-(5, 4, 9, 'Hoodie Ó╣äÓ©ïÓ©¬Ó╣î M Ó©¬Ó©╣Ó©ç 175 Ó╣âÓ©¬Ó╣êÓ╣äÓ©öÓ╣ëÓ©íÓ©▒Ó╣ëÓ©óÓ©äÓ©úÓ©▒Ó©Ü?', 0, 'answered', '2026-04-07 17:17:47'),
-(6, 6, 7, 'Ó©üÓ©úÓ©░Ó©ùÓ©░Ó╣âÓ©èÓ╣ëÓ©üÓ©▒Ó©ÜÓ╣ÇÓ©òÓ©▓Ó╣üÓ©íÓ╣êÓ╣ÇÓ©½Ó©ÑÓ╣çÓ©üÓ╣äÓ©ƒÓ©ƒÓ╣ëÓ©▓Ó╣äÓ©öÓ╣ëÓ©íÓ©▒Ó╣ëÓ©óÓ©äÓ©úÓ©▒Ó©Ü?', 0, 'pending', '2026-04-07 17:17:47');
+(4, 3, 6, 'Sony XM5 ใส่แล้วเจ็บหูไหมครับ?', 0, 'answered', '2026-04-07 17:17:47'),
+(5, 4, 9, 'Hoodie ไซส์ M สูง 175 ใส่ได้พอดีไหมครับ?', 0, 'answered', '2026-04-07 17:17:47'),
+(6, 6, 7, 'กระทะนี้ใช้กับเตาแม่เหล็กไฟฟ้าได้ไหมครับ?', 0, 'pending', '2026-04-07 17:17:47');
 
 -- --------------------------------------------------------
 
@@ -1866,8 +1934,8 @@ INSERT INTO `roles` (`role_id`, `role_key`, `role_name`, `description`, `color`,
 (5, 'support', 'Customer Support', 'ดูแล Ticket และช่วยเหลือลูกค้า', '#0d6efd', 'bi-headset', 0, 1, 50, '2026-04-07 17:17:46'),
 (6, 'seller', 'Seller', 'ผู้ขายสินค้าในระบบ', '#ff7337', 'bi-shop', 0, 1, 60, '2026-04-07 17:17:46'),
 (7, 'buyer', 'Buyer', 'ผู้ซื้อสินค้าทั่วไป', '#6c757d', 'bi-person', 1, 1, 70, '2026-04-07 17:17:46'),
-(8, 'vip_buyer', 'VIP Buyer', 'Ó©ÑÓ©╣Ó©üÓ©äÓ╣ëÓ©▓ VIP Ó©óÓ©¡Ó©öÓ©ïÓ©ÀÓ╣ëÓ©¡Ó©¬Ó©╣Ó©ç', '#ffc107', 'bi-star-fill', 0, 0, 80, '2026-04-07 17:17:46'),
-(9, 'seller_premium', 'Premium Seller', 'Ó©úÓ╣ëÓ©▓Ó©ÖÓ©äÓ╣ëÓ©▓Ó©×Ó©úÓ©ÁÓ╣ÇÓ©íÓ©ÁÓ©óÓ©í', '#20c997', 'bi-shop-window', 0, 0, 90, '2026-04-07 17:17:46');
+(8, 'vip_buyer', 'VIP Buyer', 'ผู้ซื้อสินค้า VIP พร้อมสิทธิ์ประโยชน์', '#ffc107', 'bi-star-fill', 0, 0, 80, '2026-04-07 17:17:46'),
+(9, 'seller_premium', 'Premium Seller', 'ร้านค้าพรีเมียม (Verified)', '#20c997', 'bi-shop-window', 0, 0, 90, '2026-04-07 17:17:46');
 
 -- --------------------------------------------------------
 
@@ -1892,28 +1960,28 @@ INSERT INTO `search_history` (`search_id`, `user_id`, `keyword`, `searched_at`) 
 (3, 7, 'hoodie oversized', '2026-04-07 16:36:13'),
 (4, 8, 'headphone', '2026-04-07 16:36:13'),
 (5, 8, 'sony xm5', '2026-04-07 16:36:13'),
-(6, 9, 'Ó©üÓ©úÓ©░Ó©ùÓ©░ non-stick', '2026-04-07 16:36:13'),
-(7, 10, 'Ó©úÓ©¡Ó©çÓ╣ÇÓ©ùÓ╣ëÓ©▓Ó©£Ó╣ëÓ©▓Ó╣âÓ©Ü', '2026-04-07 16:36:13'),
-(8, 15, 'Ó©èÓ©©Ó©öÓ©£Ó╣ëÓ©▓Ó©øÓ©╣Ó©ùÓ©ÁÓ╣êÓ©ÖÓ©¡Ó©Ö', '2026-04-07 17:21:46'),
-(9, 16, 'Ó©üÓ©úÓ©░Ó©ùÓ©░', '2026-04-07 17:21:46'),
-(10, 17, 'Ó©èÓ©©Ó©öÓ©£Ó╣ëÓ©▓Ó©øÓ©╣Ó©ùÓ©ÁÓ╣êÓ©ÖÓ©¡Ó©Ö', '2026-04-07 17:21:46'),
+(6, 9, 'เสื้อผ้าแฟชั่น', '2026-04-07 16:36:13'),
+(7, 10, 'เสื้อผ้าแฟชั่น', '2026-04-07 16:36:13'),
+(8, 15, 'เสื้อผ้าแฟชั่น', '2026-04-07 17:21:46'),
+(9, 16, 'เสื้อผ้าแฟชั่น', '2026-04-07 17:21:46'),
+(10, 17, 'เสื้อผ้าแฟชั่น', '2026-04-07 17:21:46'),
 (11, 18, 'cargo pants', '2026-04-07 17:21:46'),
-(12, 19, 'Ó©½Ó©╣Ó©ƒÓ©▒Ó©ç', '2026-04-07 17:21:46'),
+(12, 19, 'เสื้อผ้าแฟชั่น', '2026-04-07 17:21:46'),
 (13, 20, 'Ó╣ÇÓ©¬Ó©ÀÓ╣ëÓ©¡Ó╣üÓ©ƒÓ©èÓ©▒Ó╣êÓ©Ö', '2026-04-07 17:21:46'),
 (14, 21, 'Ó╣ÇÓ©ïÓ©úÓ©▒Ó╣êÓ©íÓ©ºÓ©┤Ó©òÓ©▓Ó©íÓ©┤Ó©ÖÓ©ïÓ©Á', '2026-04-07 17:21:46'),
-(15, 22, 'Ó©üÓ©úÓ©░Ó©ùÓ©░', '2026-04-07 17:21:46'),
-(16, 23, 'Ó©ÑÓ©┤Ó©øÓ©¬Ó©òÓ©┤Ó©ü', '2026-04-07 17:21:46'),
-(17, 24, 'Ó©ÑÓ©┤Ó©øÓ©¬Ó©òÓ©┤Ó©ü', '2026-04-07 17:21:46'),
-(18, 25, 'Ó©½Ó©╣Ó©ƒÓ©▒Ó©ç', '2026-04-07 17:21:46'),
-(19, 26, 'Ó©½Ó©╣Ó©ƒÓ©▒Ó©ç', '2026-04-07 17:21:46'),
-(20, 27, 'Ó©ÑÓ©┤Ó©øÓ©¬Ó©òÓ©┤Ó©ü', '2026-04-07 17:21:46'),
-(21, 28, 'Ó©½Ó©╣Ó©ƒÓ©▒Ó©ç', '2026-04-07 17:21:46'),
-(22, 29, 'Ó©äÓ©úÓ©ÁÓ©íÓ©üÓ©▒Ó©ÖÓ╣üÓ©öÓ©ö', '2026-04-07 17:21:46'),
+(15, 22, 'เสื้อผ้าแฟชั่น', '2026-04-07 17:21:46'),
+(16, 23, 'เสื้อผ้าแฟชั่น', '2026-04-07 17:21:46'),
+(17, 24, 'เสื้อผ้าแฟชั่น', '2026-04-07 17:21:46'),
+(18, 25, 'เสื้อผ้าแฟชั่น', '2026-04-07 17:21:46'),
+(19, 26, 'เสื้อผ้าแฟชั่น', '2026-04-07 17:21:46'),
+(20, 27, 'เสื้อผ้าแฟชั่น', '2026-04-07 17:21:46'),
+(21, 28, 'เสื้อผ้าแฟชั่น', '2026-04-07 17:21:46'),
+(22, 29, 'เสื้อผ้าแฟชั่น', '2026-04-07 17:21:46'),
 (23, 30, 'Ó╣ÇÓ©¬Ó©ÀÓ╣êÓ©¡Ó╣éÓ©óÓ©äÓ©░', '2026-04-07 17:21:46'),
 (24, 31, 'cargo pants', '2026-04-07 17:21:46'),
-(25, 32, 'Ó©èÓ©©Ó©öÓ©£Ó╣ëÓ©▓Ó©øÓ©╣Ó©ùÓ©ÁÓ╣êÓ©ÖÓ©¡Ó©Ö', '2026-04-07 17:21:46'),
+(25, 32, 'เสื้อผ้าแฟชั่น', '2026-04-07 17:21:46'),
 (26, 33, 'Ó╣ÇÓ©¬Ó©ÀÓ╣ëÓ©¡Ó╣üÓ©ƒÓ©èÓ©▒Ó╣êÓ©Ö', '2026-04-07 17:21:46'),
-(27, 34, 'Ó©èÓ©©Ó©öÓ©£Ó╣ëÓ©▓Ó©øÓ©╣Ó©ùÓ©ÁÓ╣êÓ©ÖÓ©¡Ó©Ö', '2026-04-07 17:21:46');
+(27, 34, 'เสื้อผ้าแฟชั่น', '2026-04-07 17:21:46');
 
 -- --------------------------------------------------------
 
@@ -2394,7 +2462,7 @@ INSERT INTO `users` (`user_id`, `username`, `email`, `phone`, `password_hash`, `
 (8, 'buyer3', 'buyer3@mail.com', '0843333333', '$2y$10$VyIMozF9OwKb0I0AwDOEve5OFktFugU5zoWSpyyOnIJYNY.4mjBsO', 'Lalita Chan', '/webshop/uploads/users/avatar_8_1775566416.jpg', 'female', '2000-12-25', 'buyer', 1, 1, NULL, '2026-04-07 16:36:13', '2026-04-07 20:43:53'),
 (9, 'buyer4', 'buyer4@mail.com', '0844444444', '$2y$10$VyIMozF9OwKb0I0AwDOEve5OFktFugU5zoWSpyyOnIJYNY.4mjBsO', 'Natthapong K', '/webshop/uploads/users/avatar_9_1775566416.jpg', 'male', '1997-06-14', 'buyer', 1, 1, NULL, '2026-04-07 16:36:13', '2026-04-07 20:43:53'),
 (10, 'buyer5', 'buyer5@mail.com', '0845555555', '$2y$10$VyIMozF9OwKb0I0AwDOEve5OFktFugU5zoWSpyyOnIJYNY.4mjBsO', 'Porntip W', '/webshop/uploads/users/avatar_10_1775566416.jpg', 'female', '2001-02-28', 'buyer', 1, 1, NULL, '2026-04-07 16:36:13', '2026-04-07 20:43:53'),
-(11, 'superadmin', 'superadmin@shopee.th', '0800000000', '$2y$10$VyIMozF9OwKb0I0AwDOEve5OFktFugU5zoWSpyyOnIJYNY.4mjBsO', 'Super Administrator', '/webshop/uploads/users/avatar_11_1775566416.jpg', NULL, NULL, 'superadmin', 1, 1, '2026-04-07 18:58:15', '2026-04-07 17:05:34', '2026-04-07 20:43:53'),
+(11, 'superadmin', 'superadmin@shopee.th', '0800000000', '$2y$10$VyIMozF9OwKb0I0AwDOEve5OFktFugU5zoWSpyyOnIJYNY.4mjBsO', 'Super Administrator', '/webshop/uploads/users/avatar_11_1775566416.jpg', NULL, NULL, 'superadmin', 1, 1, '2026-04-07 22:08:11', '2026-04-07 17:05:34', '2026-04-07 22:08:11'),
 (12, 'admin', 'admin@shopee.th', '0800000003', '$2y$10$VyIMozF9OwKb0I0AwDOEve5OFktFugU5zoWSpyyOnIJYNY.4mjBsO', 'Administrator', '/webshop/uploads/users/avatar_12_1775566417.jpg', NULL, NULL, 'admin', 1, 1, NULL, '2026-04-07 17:05:34', '2026-04-07 20:43:53'),
 (13, 'seller_d', 'seller_d@mail.com', '0844444441', '$2y$10$VyIMozF9OwKb0I0AwDOEve5OFktFugU5zoWSpyyOnIJYNY.4mjBsO', 'Wanchai Jaidee', '/webshop/uploads/users/avatar_13_1775566417.jpg', 'male', '1990-04-20', 'seller', 1, 1, NULL, '2026-04-07 17:17:58', '2026-04-07 20:43:53'),
 (14, 'seller_e', 'seller_e@mail.com', '0855555551', '$2y$10$VyIMozF9OwKb0I0AwDOEve5OFktFugU5zoWSpyyOnIJYNY.4mjBsO', 'Siriporn Kaew', '/webshop/uploads/users/avatar_14_1775566417.jpg', 'female', '1992-08-15', 'seller', 1, 1, NULL, '2026-04-07 17:17:58', '2026-04-07 20:43:53'),
@@ -2456,26 +2524,26 @@ INSERT INTO `user_addresses` (`address_id`, `user_id`, `label`, `recipient_name`
 (4, 8, 'Home', 'Lalita Chan', '0843333333', '9 Ratchadamnoen Ave.', NULL, 'Phra Nakhon', 'Bangkok', '10200', 'Thailand', 1, '2026-04-07 16:36:13', '2026-04-07 16:36:13'),
 (5, 9, 'Home', 'Natthapong K', '0844444444', '55 Mueang District', NULL, 'Mueang', 'Khon Kaen', '40000', 'Thailand', 1, '2026-04-07 16:36:13', '2026-04-07 16:36:13'),
 (6, 10, 'Home', 'Porntip W', '0845555555', '12 Beach Rd.', NULL, 'Mueang', 'Phuket', '83000', 'Thailand', 1, '2026-04-07 16:36:13', '2026-04-07 16:36:13'),
-(7, 15, 'Home', 'Ariya Sombat', '0861111116', '345 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'Ó©ºÓ©▒Ó©ÆÓ©ÖÓ©▓', 'Ó©üÓ©úÓ©©Ó©çÓ╣ÇÓ©ùÓ©×Ó©íÓ©½Ó©▓Ó©ÖÓ©äÓ©ú', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 17:17:58'),
-(8, 16, 'Home', 'Krit Panit', '0861111117', '100 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'Ó©ºÓ©▒Ó©ÆÓ©ÖÓ©▓', 'Ó©üÓ©úÓ©©Ó©çÓ╣ÇÓ©ùÓ©×Ó©íÓ©½Ó©▓Ó©ÖÓ©äÓ©ú', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 17:17:58'),
-(9, 17, 'Home', 'Malee Srisuk', '0861111118', '464 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'Ó©ºÓ©▒Ó©ÆÓ©ÖÓ©▓', 'Ó©üÓ©úÓ©©Ó©çÓ╣ÇÓ©ùÓ©×Ó©íÓ©½Ó©▓Ó©ÖÓ©äÓ©ú', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 17:17:58'),
-(10, 18, 'Home', 'Tawan Chai', '0861111119', '20 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'Ó©ºÓ©▒Ó©ÆÓ©ÖÓ©▓', 'Ó©üÓ©úÓ©©Ó©çÓ╣ÇÓ©ùÓ©×Ó©íÓ©½Ó©▓Ó©ÖÓ©äÓ©ú', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 17:17:58'),
-(11, 19, 'Home', 'Nattida Park', '0861111110', '706 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'Ó©ºÓ©▒Ó©ÆÓ©ÖÓ©▓', 'Ó©üÓ©úÓ©©Ó©çÓ╣ÇÓ©ùÓ©×Ó©íÓ©½Ó©▓Ó©ÖÓ©äÓ©ú', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 17:17:58'),
-(12, 20, 'Home', 'Somsak Dee', '0871111111', '475 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'Ó©ºÓ©▒Ó©ÆÓ©ÖÓ©▓', 'Ó©üÓ©úÓ©©Ó©çÓ╣ÇÓ©ùÓ©×Ó©íÓ©½Ó©▓Ó©ÖÓ©äÓ©ú', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 17:17:58'),
-(13, 21, 'Home', 'Chanida Wan', '0871111112', '253 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'Ó©ºÓ©▒Ó©ÆÓ©ÖÓ©▓', 'Ó©üÓ©úÓ©©Ó©çÓ╣ÇÓ©ùÓ©×Ó©íÓ©½Ó©▓Ó©ÖÓ©äÓ©ú', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 17:17:58'),
-(14, 22, 'Home', 'Pakorn Lek', '0871111113', '842 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'Ó©ºÓ©▒Ó©ÆÓ©ÖÓ©▓', 'Ó©üÓ©úÓ©©Ó©çÓ╣ÇÓ©ùÓ©×Ó©íÓ©½Ó©▓Ó©ÖÓ©äÓ©ú', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 17:17:58'),
-(15, 23, 'Home', 'Sirada Na', '0871111114', '451 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'Ó©ºÓ©▒Ó©ÆÓ©ÖÓ©▓', 'Ó©üÓ©úÓ©©Ó©çÓ╣ÇÓ©ùÓ©×Ó©íÓ©½Ó©▓Ó©ÖÓ©äÓ©ú', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 17:17:58'),
-(16, 24, 'Home', 'Mongkol Rod', '0871111115', '729 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'Ó©ºÓ©▒Ó©ÆÓ©ÖÓ©▓', 'Ó©üÓ©úÓ©©Ó©çÓ╣ÇÓ©ùÓ©×Ó©íÓ©½Ó©▓Ó©ÖÓ©äÓ©ú', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 17:17:58'),
-(17, 25, 'Home', 'Pimchanok W', '0881111116', '294 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'Ó©ºÓ©▒Ó©ÆÓ©ÖÓ©▓', 'Ó©üÓ©úÓ©©Ó©çÓ╣ÇÓ©ùÓ©×Ó©íÓ©½Ó©▓Ó©ÖÓ©äÓ©ú', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 17:17:58'),
-(18, 26, 'Home', 'Chatchai Boon', '0881111117', '280 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'Ó©ºÓ©▒Ó©ÆÓ©ÖÓ©▓', 'Ó©üÓ©úÓ©©Ó©çÓ╣ÇÓ©ùÓ©×Ó©íÓ©½Ó©▓Ó©ÖÓ©äÓ©ú', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 17:17:58'),
-(19, 27, 'Home', 'Jirawan Porn', '0881111118', '518 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'Ó©ºÓ©▒Ó©ÆÓ©ÖÓ©▓', 'Ó©üÓ©úÓ©©Ó©çÓ╣ÇÓ©ùÓ©×Ó©íÓ©½Ó©▓Ó©ÖÓ©äÓ©ú', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 17:17:58'),
-(20, 28, 'Home', 'Nantapong S', '0881111119', '749 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'Ó©ºÓ©▒Ó©ÆÓ©ÖÓ©▓', 'Ó©üÓ©úÓ©©Ó©çÓ╣ÇÓ©ùÓ©×Ó©íÓ©½Ó©▓Ó©ÖÓ©äÓ©ú', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 17:17:58'),
-(21, 29, 'Home', 'Ratana Kul', '0881111110', '193 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'Ó©ºÓ©▒Ó©ÆÓ©ÖÓ©▓', 'Ó©üÓ©úÓ©©Ó©çÓ╣ÇÓ©ùÓ©×Ó©íÓ©½Ó©▓Ó©ÖÓ©äÓ©ú', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 17:17:58'),
-(22, 30, 'Home', 'Supawit K', '0891111121', '717 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'Ó©ºÓ©▒Ó©ÆÓ©ÖÓ©▓', 'Ó©üÓ©úÓ©©Ó©çÓ╣ÇÓ©ùÓ©×Ó©íÓ©½Ó©▓Ó©ÖÓ©äÓ©ú', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 17:17:58'),
-(23, 31, 'Home', 'Lalita Ang', '0891111122', '6 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'Ó©ºÓ©▒Ó©ÆÓ©ÖÓ©▓', 'Ó©üÓ©úÓ©©Ó©çÓ╣ÇÓ©ùÓ©×Ó©íÓ©½Ó©▓Ó©ÖÓ©äÓ©ú', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 17:17:58'),
-(24, 32, 'Home', 'Thatchai M', '0891111123', '878 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'Ó©ºÓ©▒Ó©ÆÓ©ÖÓ©▓', 'Ó©üÓ©úÓ©©Ó©çÓ╣ÇÓ©ùÓ©×Ó©íÓ©½Ó©▓Ó©ÖÓ©äÓ©ú', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 17:17:58'),
-(25, 33, 'Home', 'Vareeya C', '0891111124', '375 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'Ó©ºÓ©▒Ó©ÆÓ©ÖÓ©▓', 'Ó©üÓ©úÓ©©Ó©çÓ╣ÇÓ©ùÓ©×Ó©íÓ©½Ó©▓Ó©ÖÓ©äÓ©ú', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 17:17:58'),
-(26, 34, 'Home', 'Jirasak P', '0891111125', '241 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'Ó©ºÓ©▒Ó©ÆÓ©ÖÓ©▓', 'Ó©üÓ©úÓ©©Ó©çÓ╣ÇÓ©ùÓ©×Ó©íÓ©½Ó©▓Ó©ÖÓ©äÓ©ú', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 17:17:58'),
+(7, 15, 'Home', 'Ariya Sombat', '0861111116', '345 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'เขตปทุมวัน', 'กรุงเทพมหานคร', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 22:18:38'),
+(8, 16, 'Home', 'Krit Panit', '0861111117', '100 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'เขตปทุมวัน', 'กรุงเทพมหานคร', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 22:18:38'),
+(9, 17, 'Home', 'Malee Srisuk', '0861111118', '464 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'เขตปทุมวัน', 'กรุงเทพมหานคร', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 22:18:38'),
+(10, 18, 'Home', 'Tawan Chai', '0861111119', '20 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'เขตปทุมวัน', 'กรุงเทพมหานคร', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 22:18:38'),
+(11, 19, 'Home', 'Nattida Park', '0861111110', '706 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'เขตปทุมวัน', 'กรุงเทพมหานคร', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 22:18:38'),
+(12, 20, 'Home', 'Somsak Dee', '0871111111', '475 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'เขตปทุมวัน', 'กรุงเทพมหานคร', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 22:18:38'),
+(13, 21, 'Home', 'Chanida Wan', '0871111112', '253 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'เขตปทุมวัน', 'กรุงเทพมหานคร', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 22:18:38'),
+(14, 22, 'Home', 'Pakorn Lek', '0871111113', '842 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'เขตปทุมวัน', 'กรุงเทพมหานคร', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 22:18:38'),
+(15, 23, 'Home', 'Sirada Na', '0871111114', '451 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'เขตปทุมวัน', 'กรุงเทพมหานคร', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 22:18:38'),
+(16, 24, 'Home', 'Mongkol Rod', '0871111115', '729 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'เขตปทุมวัน', 'กรุงเทพมหานคร', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 22:18:38'),
+(17, 25, 'Home', 'Pimchanok W', '0881111116', '294 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'เขตปทุมวัน', 'กรุงเทพมหานคร', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 22:18:38'),
+(18, 26, 'Home', 'Chatchai Boon', '0881111117', '280 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'เขตปทุมวัน', 'กรุงเทพมหานคร', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 22:18:38'),
+(19, 27, 'Home', 'Jirawan Porn', '0881111118', '518 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'เขตปทุมวัน', 'กรุงเทพมหานคร', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 22:18:38'),
+(20, 28, 'Home', 'Nantapong S', '0881111119', '749 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'เขตปทุมวัน', 'กรุงเทพมหานคร', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 22:18:38'),
+(21, 29, 'Home', 'Ratana Kul', '0881111110', '193 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'เขตปทุมวัน', 'กรุงเทพมหานคร', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 22:18:38'),
+(22, 30, 'Home', 'Supawit K', '0891111121', '717 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'เขตปทุมวัน', 'กรุงเทพมหานคร', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 22:18:38'),
+(23, 31, 'Home', 'Lalita Ang', '0891111122', '6 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'เขตปทุมวัน', 'กรุงเทพมหานคร', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 22:18:38'),
+(24, 32, 'Home', 'Thatchai M', '0891111123', '878 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'เขตปทุมวัน', 'กรุงเทพมหานคร', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 22:18:38'),
+(25, 33, 'Home', 'Vareeya C', '0891111124', '375 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'เขตปทุมวัน', 'กรุงเทพมหานคร', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 22:18:38'),
+(26, 34, 'Home', 'Jirasak P', '0891111125', '241 Ó©ûÓ©ÖÓ©ÖÓ©¬Ó©©Ó©éÓ©©Ó©íÓ©ºÓ©┤Ó©ù', NULL, 'เขตปทุมวัน', 'กรุงเทพมหานคร', '10110', 'Thailand', 1, '2026-04-07 17:17:58', '2026-04-07 22:18:38'),
 (38, 61, 'Home', '11', '0958462520', '83/51 ถนนพระราชดำริ', 'ตำบล หนองแก อำเภท หัวหิน', 'หัวหิน', 'ประจวบคีรีขันธ์', '77110', 'Thailand', 1, '2026-04-07 20:12:52', '2026-04-07 20:12:52'),
 (39, 63, 'Home', '11', '0958462520', '83/51 ถนนพระราชดำริ', 'ตำบล หนองแก อำเภท หัวหิน', 'หนองแก', 'ประจวบคีรีขันธ์', '77110', 'Thailand', 1, '2026-04-07 20:59:42', '2026-04-07 20:59:42');
 
@@ -2710,7 +2778,7 @@ CREATE TABLE `wallets` (
 --
 
 INSERT INTO `wallets` (`wallet_id`, `user_id`, `balance`, `coins`, `created_at`, `updated_at`) VALUES
-(1, 6, 250.00, 120.00, '2026-04-07 16:36:13', '2026-04-07 16:36:13'),
+(1, 6, 10844.00, 120.00, '2026-04-07 16:36:13', '2026-04-07 22:12:10'),
 (2, 7, 0.00, 50.00, '2026-04-07 16:36:13', '2026-04-07 16:36:13'),
 (3, 8, 100.00, 200.00, '2026-04-07 16:36:13', '2026-04-07 16:36:13'),
 (4, 9, 0.00, 30.00, '2026-04-07 16:36:13', '2026-04-07 16:36:13'),
@@ -2764,9 +2832,13 @@ CREATE TABLE `wallet_transactions` (
 --
 
 INSERT INTO `wallet_transactions` (`transaction_id`, `wallet_id`, `type`, `amount`, `balance_before`, `balance_after`, `reference_type`, `reference_id`, `description`, `status`, `created_at`) VALUES
-(1, 1, 'cashback', 50.00, 200.00, 250.00, 'order', 1, 'Cashback 1% Ó©êÓ©▓Ó©üÓ©¡Ó©¡Ó╣ÇÓ©öÓ©¡Ó©úÓ╣î ORD-20240401-000001', 'success', '2026-04-07 16:36:13'),
 (2, 3, 'coins_earn', 100.00, 100.00, 200.00, 'order', 3, 'Coins earned from order ORD-20240410-000003', 'success', '2026-04-07 16:36:13'),
-(3, 1, 'topup', 200.00, 0.00, 200.00, NULL, NULL, 'Ó╣ÇÓ©òÓ©┤Ó©íÓ╣ÇÓ©çÓ©┤Ó©Ö Shopee Pay', 'success', '2026-04-07 16:36:13');
+(40, 1, 'topup', 15000.00, 0.00, 15000.00, NULL, NULL, 'เติมเงินผ่าน K-Bank Plus', 'success', '2026-04-01 22:12:10'),
+(41, 1, 'payment', -1290.00, 15000.00, 13710.00, NULL, NULL, 'ชำระค่าสินค้าเซรั่มบำรุงผิว', 'success', '2026-04-05 22:12:10'),
+(42, 1, 'refund', 450.00, 13710.00, 14160.00, NULL, NULL, 'คืนเงินเคสโทรศัพท์ไม่ตรงรุ่น', 'success', '2026-03-23 22:12:10'),
+(43, 1, 'topup', 5000.00, 14160.00, 19160.00, NULL, NULL, 'เติมเงินผ่านพร้อมเพย์', 'success', '2026-03-31 22:12:10'),
+(44, 1, 'payment', -8400.00, 19160.00, 10760.00, NULL, NULL, 'ชำระค่า MacBook มือสอง', 'success', '2026-04-06 22:12:10'),
+(45, 1, 'cashback', 84.00, 10760.00, 10844.00, NULL, NULL, 'รับเงินคืน (Cashback Loyalty)', 'success', '2026-04-06 22:12:10');
 
 -- --------------------------------------------------------
 
@@ -3478,7 +3550,7 @@ ALTER TABLE `wishlists`
 -- AUTO_INCREMENT for table `activity_logs`
 --
 ALTER TABLE `activity_logs`
-  MODIFY `log_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `log_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `admin_logs`
@@ -3604,7 +3676,7 @@ ALTER TABLE `notifications`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
+  MODIFY `order_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=131;
 
 --
 -- AUTO_INCREMENT for table `order_items`
@@ -3856,13 +3928,13 @@ ALTER TABLE `voucher_usage_log`
 -- AUTO_INCREMENT for table `wallets`
 --
 ALTER TABLE `wallets`
-  MODIFY `wallet_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `wallet_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `wallet_transactions`
 --
 ALTER TABLE `wallet_transactions`
-  MODIFY `transaction_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `transaction_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
 
 --
 -- Constraints for dumped tables

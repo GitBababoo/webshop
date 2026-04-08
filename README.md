@@ -16,11 +16,16 @@ A robust, self-healing e-commerce platform built with PHP/MySQL, featuring autom
 - **Dynamic Discovery**: ค้นหาลิงก์ใหม่ๆ โดยอัตโนมัติ
 - **Deep Scanning**: ตรวจจับ PHP Error, Syntax Error และ SQL Error ล่วงหน้า
 
+### 🛡️ Universal Guard System (ระบบคุ้มกันอัจฉริยะ)
+- **Broken Image Healing**: ตรวจจับและซ่อมแซมภาพที่เสียทั่วทั้งเว็บแบบ Real-time
+- **Database Self-Healing**: ระบบ Guard ที่ป้องกัน SQL Crash เผื่อกรณีข้อมูลผิดพลาด
+- **Error Visualization**: หน้า Dashboard สำหรับติดตาม Error Logs ได้ทันที
+
 ---
 
 ## 🖼️ ระบบการทำงาน (Showcase)
 > [!NOTE]  
-> **คลิกที่ปุ่มด้านล่างเพื่อเปิดดู "สไลด์ภาพ" ตัวอย่างระบบทั้งหมดคั้บ!**
+> **คลิกที่ปุ่มด้านล่างเพื่อเปิดดู "สไลด์ภาพ" ตัวอย่างระบบในมุมมองภาษาไทยครับ!**
 
 <details>
 <summary><b>📂 คลิกเพื่อดูรูปภาพตัวอย่างระบบ (Click to expand Gallery)</b></summary>
@@ -30,9 +35,11 @@ A robust, self-healing e-commerce platform built with PHP/MySQL, featuring autom
 |:---:|:---:|
 | <img src="./assets/screenshots/homepage.png" width="400"> | <img src="./assets/screenshots/product.png" width="400"> |
 
-| 🛡️ Admin Dashboard | 🎯 Crawler Stability |
+| 📊 Admin Control Center (Localized) | 🎯 Crawler Stability |
 |:---:|:---:|
 | <img src="./assets/screenshots/admin.png" width="400"> | <img src="./assets/screenshots/crawler.png" width="400"> |
+
+<p align="center"><i>หมายเหตุ: หน้า Admin ได้รับการทำ Localization เป็นภาษาไทยสมบูรณ์แบบ 100%</i></p>
 
 </details>
 
@@ -42,7 +49,7 @@ A robust, self-healing e-commerce platform built with PHP/MySQL, featuring autom
 
 1. **Clone Repository**: `git clone https://github.com/GitBababoo/webshop.git`
 2. **Move to XAMPP**: ย้ายโฟลเดอร์โครงการไปไว้ที่ `C:/xampp/htdocs/webshop`
-3. **Database Setup**: นำเข้าไฟล์ฐานข้อมูล `web_shop` และตั้งค่าใน `/config/database.php`
+3. **Database Setup**: นำเข้าไฟล์ฐานข้อมูล `shopee_db.sql` และตั้งค่าในคลังข้อมูล
 4. **Ready**: เข้าใช้งานผ่าน [http://localhost/webshop/](http://localhost/webshop/)
 
 ---
